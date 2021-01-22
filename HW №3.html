@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> <!--Установка кодировки страницы(понимает латиницу и кириллицу)-->
+		<title>My third HTML+CSS HW (by Yuri Kamotsky)</title> <!--Название веб-страницы на вкладке браузера-->
+		<link rel="stylesheet" type="text/css" href="style for HW №3.css"> <!--Добавление стилей к веб-странице с помощью внешней таблицы стилей-->
+		<!-- При помощи внутренней таблицы стилей задаём задний фон страницы -->
+		<style>
+			body {
+				background-image: radial-gradient(ellipse, cyan, indigo);
+				height: 100vh;
+			}
+		</style>	
+	</head>
+	<body>
+		<!-- Элемент <div> является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого -->
+		<div class="block"> 
+		<h1 class="title"> CONTACT US </h1>
+		<form method="post" action="file.php"> <!-- Метод передачи данных HTTP-протокола, который будет использован при отправке данных формы -->
+			<p><b><span class="asterisk">*</span></b> <select class="country" name="country" required>
+				<option> Select your country </option>
+				<option> Belarus </option>
+				<option> Russia </option>
+				<option> Ukraine </option>
+				<option> Lithuania </option>
+				<option> Latvian </option>
+				<option> Estonia </option>
+				</select> 
+			</p>
+			<p><input class="city" type="text" name="city" placeholder="Your city"></p>
+			<p>
+				<input type="radio" name="gender" value="man"> Man
+				<input type="radio" name="gender" value="woman"> Woman
+			</p>
+			<p><b><span class="asterisk">*</span></b> <input class="fName" type="text" name="firstName" placeholder="First name" required></p>
+			<p><b><span class="asterisk">*</span></b> <input class="lName" type="text" name="lastName" placeholder="Last name" required></p>
+			<p>Date of birth<input class="dBirth" type="date" name="birthDay"></p>
+			<p><b><span class="asterisk">*</span></b> <input class="phone" type="text" name="phone" placeholder="Your phone number" required></p>
+			<p><b><span class="asterisk">*</span></b> <input class="email" type="email" name="email" placeholder="Email" required></p>
+			<p><input class="file" type="file" name="file"></p>
+			<p><textarea class="message" name="comment" placeholder="Message"></textarea></p>
+			<p><b><span class="asterisk">*</span> denotes required fields</b></p>
+			<p><button type="reset" class="button2">Reset</br> form</p>
+			<p><button type="submit" class="button1">Send</br> form</p>
+		</form>
+		</div>
+	</body>
+</html>
